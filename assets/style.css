@@ -1,8 +1,8 @@
 
 html {
     background-color: #d2c8bc;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #bbcfd7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #bbcfd7; 
 }
 
 header {
@@ -12,26 +12,43 @@ header {
     border: 10px solid #5b828e;
     border-radius: 1em;
     background-color: #5b828e;
-    text-decoration: none;
-    
+  
 }
 
-section {
+div {
     background-color: #5b828e;
-    border: 20px solid #5b828e;
+    border: 15px solid #5b828e;
     border-radius: 1em;
     padding: 10px solid #5b828e;
-    margin: 15px solid #5b828e;
+    margin: 15px; 
 }
 
 #header-info {
-    text-decoration: none;
     color: #bbcfd7;
     display: flex;
     float: right;
+    list-style: none;
+    padding: 5px;
 
 }
 
-section {
-    border: 50px solid ;
+#pic-of-me {
+    
 }
+
+a {
+    text-decoration: none;
+    color: #bbcfd7;
+    margin-left: 5px;
+    border: 2px solid #bbcfd7;
+    border-radius: 1em ;
+    padding: 4px;
+}
+
+
+/*li {
+    text-decoration: none;
+    list-style: none;
+    color: #bbcfd7;  */
+    
+
