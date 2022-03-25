@@ -1,0 +1,37 @@
+
+html {
+    background-color: #d2c8bc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #bbcfd7;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    border: 10px solid #5b828e;
+    border-radius: 1em;
+    background-color: #5b828e;
+    text-decoration: none;
+    
+}
+
+section {
+    background-color: #5b828e;
+    border: 20px solid #5b828e;
+    border-radius: 1em;
+    padding: 10px solid #5b828e;
+    margin: 15px solid #5b828e;
+}
+
+#header-info {
+    text-decoration: none;
+    color: #bbcfd7;
+    display: flex;
+    float: right;
+
+}
+
+section {
+    border: 50px solid ;
+}
