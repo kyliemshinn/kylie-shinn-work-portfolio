@@ -12,6 +12,7 @@ header {
     border: 10px solid #5b828e;
     border-radius: 1em;
     background-color: #5b828e;
+    z-index: 100%;
   
 }
 
@@ -46,9 +47,6 @@ a {
 }
 
 
-/*li {
-    text-decoration: none;
-    list-style: none;
-    color: #bbcfd7;  */
+
     
 
