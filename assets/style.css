@@ -2,26 +2,47 @@
 html {
     background-color: #d2c8bc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #bbcfd7; 
+    color: var(--light-blue); 
+}
+
+:root {
+    --light-blue: #bbcfd7;
+    
 }
 
 header {
     position: fixed;
     top: 0;
-    width: 95%;
+    width: 97%;
+    max-height:200px;
     border: 10px solid #5b828e;
     border-radius: 1em;
     background-color: #5b828e;
     z-index: 100%;
+
   
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1 0 100%;
+}
+
 div {
-    background-color: #5b828e;
-    border: 15px solid #5b828e;
+    background-color: var(--light-blue);
+    border: 15px solid var(--light-blue);
     border-radius: 1em;
-    padding: 10px solid #5b828e;
+    padding: 10px solid var(--light-blue);
     margin: 15px; 
+    color: #ac7e62;
+    /* background-image: url(https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/north-america/united-states/san-francisco/destinations-san-francisco-banner-mobile-1024x553.jpg); */
+
+
 }
 
 #header-info {
@@ -34,10 +55,11 @@ div {
 }
 
 #pic-of-me {
-    
+    margin-top: 220px;
+    border-radius: 1em;
 }
 
-a {
+.header-info {
     text-decoration: none;
     color: #bbcfd7;
     margin-left: 5px;
@@ -45,6 +67,8 @@ a {
     border-radius: 1em ;
     padding: 4px;
 }
+
+
 
 
 
