@@ -64,6 +64,8 @@ section {
     margin: 15px; 
     color: #ac7e62;
     background-image: linear-gradient(#5b828e, white);
+    margin-top: 250px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -74,24 +76,22 @@ img {
 img:hover {
     box-shadow: inset 0 0 10px white, 0 0 10px white;
 }
-
-
-#pic-of-me div{
-    margin-top: 200px;
-    padding: 30px;
-    border: solid;
-    border-radius: 1em;
-    float: left;
-}
-
-#about-me {
+/* Flot the personal picture next to the bio of */
+#pic-of-me {
     margin-top: 250px;
+    float:left
 }
-
-.bio div {
+/* have the bio float next to picture but not hide underneath the fixed header */
+.about-me {
+    margin-left: 500px;
+    padding-left: 220px;
     float: right;
+    justify-content: right;
+    clear: both;
+    
 }
 
+/* to keep the line spacing smaller */
 #contact-info {
     line-height: 5px;
 }
