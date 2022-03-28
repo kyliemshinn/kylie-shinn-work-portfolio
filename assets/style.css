@@ -1,14 +1,19 @@
 
 html {
-    background-color: #d2c8bc;
+    background-color: #aca69f;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--light-blue); 
+    color: var(--light); 
 }
 
 :root {
-    --light-blue: #bbcfd7;
-    --dark-blude: #5b828e;
+    --light-blue: #9cacbf;
+    --dark-blue: #012e67;
+    --light: #c0c9c5;
     
+}
+
+h1 {
+    text-shadow: 2px 2px black;
 }
 
 
@@ -17,15 +22,15 @@ header {
     top: 0;
     width: 97%;
     max-height:200px;
-    border: 10px solid var(--dark-blude);
+    border: 10px solid var(--dark-blue);
     border-radius: 1em;
-    background-color: var(--dark-blude);
+    background-color: var(--dark-blue);
     z-index: 100%;
 
 }
 
 #header-right {
-    color: #bbcfd7;
+    color: var(--light-blue);
     display: flex;
     float: right;
     list-style: none;
@@ -35,9 +40,9 @@ header {
   
 .header-info {
     text-decoration: none;
-    color: #bbcfd7;
+    color: var(--light);
     margin-left: 5px;
-    border: 2px solid #bbcfd7;
+    border: 2px solid var(--light-blue);
     border-radius: 1em ;
     padding: 4px;
 }
@@ -47,71 +52,118 @@ a:hover {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* section {
-    flex: 1 0 100%;
-} */
-
 /* each sections featurings. should look the same through */
 .info-sections {
-    background-color: var(--light-blue);
     border:solid var(--light-blue);
     border-radius: 1em;
     padding: 30px;
     margin: 15px; 
-    color: #ac7e62;
-    background-image: linear-gradient(#5b828e, white);
-    /* margin-top: 250px;
-    margin-bottom: 50px; */
+    width: 97%;
+    height: 300px;
+    color: var(--light);
+    background-image: linear-gradient(#012e67, #2b6684);
+
 }
+
 
 img {
     border-radius: 1em;
-    border:2px solid var(--dark-blude);
+    border:2px solid var(--dark-blue);
 }
 /* when hovering over any image it will display light around it */
 img:hover {
-    box-shadow: inset 0 0 10px white, 0 0 10px white;
+    box-shadow: inset 0 0 15px white, 0 0 15px white;
 }
 /* Flot the personal picture next to the bio of */
 #pic-of-me {
     margin-top: 250px;
-    float:left
+    margin-right: 20px;
+    float:right;
+
 }
 /* have the bio float next to picture but not hide underneath the fixed header */
 #about-me {
-    background-color: var(--light-blue);
     border:solid var(--light-blue);
     border-radius: 1em;
     margin: 15px; 
-    color: #ac7e62;
-    background-image: linear-gradient(#5b828e, white);
-
-    margin-left: 500px;
+    background-image: linear-gradient(#012e67, #2b6684);
     padding: 50px;
-    float: right;
-    justify-content: right;
-    clear: both;
+    width: 60%;
+    margin-top: 250px;
+    float: left;
     
 }
 
-/* to keep the line spacing smaller */
-#contact-info {
-    line-height: 5px;
+/* So this contact is below the float items */
+#work-history {
+    text-align: center;
+    font-size: 110%;
+    height: 20px;
+    clear: both;
+}  
+
+#project-2 {
+    float: left;
 }
 
-#work-history {
-    margin-top: 1000px;
+#project-3 {
+    float:right
+}
+
+figcaption {
+    width: fit-content;
+    font-size: large;
+    border:solid var(--dark-blue);
+    border-radius: 1em;
+    padding: 2px;
+    background-color: var(--dark-blue);
+}
+
+
+#contact-info {
+    clear:both;
+    line-height: 5px;
+    /* display: flex;
+    align-items: flex-start;
+    flex-direction: column; */
+}
+
+.contact-link {
+    color: var(--light);
+}
+
+footer {
+    color: var(--dark-blue);
+    text-align: center;
 }
 
 @media screen and (max-width:992px) {
-    
+ 
+    header {
+        width: 95%;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+    }
 
-    
+    #pic-of-me {
+        align-items: flex-start;
+        justify-content: center;
+    }
 
+    #about-me {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+}

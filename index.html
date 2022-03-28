@@ -16,7 +16,7 @@
         <div>
             <ul id="header-right">
                 <li> <a class="header-info" href="#about-me">About Me</a></li>
-                <li> <a class= "header-info" ref="#contact-info">Contact Info</a></li>
+                <li> <a class= "header-info" href="#contact-info">Contact Info</a></li>
                 <li> <a class="header-info" href="#work-history">Work History</a></li>
             </ul>
         </div>
@@ -24,46 +24,58 @@
 
     <main>
         
-        <img id="pic-of-me" src="./assets/images/photo-of-me.JPG" alt="Photo Of Me" height="300px" width="180px">
-        <section id="about-me">
-            <div>
+        <figure>
+            <div id="pic-of-me">
+                <img src="./assets/images/photo-of-me.JPG" alt="Photo Of Me" height="330px" width="230px">
+            </div>
+        </figure>
+        <section>
+            <div id="about-me">
                 <h3>About Me</h3>
-                <p clas="bio">Hello! My name is Kylie Shinn. I currently reside in San Francisco, CA.</p>
-                <p class="bio">I have a newfound passion for web development, where you will find some of my most remarkable projects below.</p>
-                <p class="bio">Stay awhile, look around, and get lost in all the fun contents I have created throughout my journey in web development. I look forward</p>
-                <p class="bio">to hearing from you soon!</p>
+                <p>Hello! My name is Kylie Shinn. I currently reside in San Francisco, CA.</p>
+                <p>I have a newfound passion for web development, where you will find some of my most remarkable projects below.</p>
+                <p>Stay awhile, look around, and get lost in all the fun contents I have created throughout my journey in web development. I look forward</p>
+                <p>to hearing from you soon!</p>
             </div>
         </section>
 
         <section>
             <div class="info-sections" id="work-history">
                 <h3>Work History</h3>
-                <div work-links>
-                    <img src="./assets/images/coding-image-1.jpg" alt="Work Experience 1" height="200px" width="200px">
-                    <img src="./assets/images/coding-image-2.jpg" alt="Work Experience 2" height="100px" width="100px">
-                    <img src="./assets/images/coding-image-3.jpg" alt="Work Experience 3" height="100px" width="100px">
-                </div>  
             </div>
+            <div work-links>
+                <figure> 
+                   <a href="https://github.com/kyliemshinn" target="_blank"> <img id="project-1" src="./assets/images/coding-image-1.jpg" alt="Work Experience 1" height="400px" width="100%"> </a>
+                    <figcaption>Project 1</figcaption>
+                </figure> 
+                <figure> 
+                   <a href="https://github.com/kyliemshinn" target="_blank"> <img id="project-2" src="./assets/images/coding-image-2.jpg" alt="Work Experience 2" height="200px" width="300px"> </a>
+                    <figcaption>Project 2</figcaption>
+                </figure> 
+                <figure>
+                   <a href="https://github.com/kyliemshinn" target="_blank"> <img id="project-3" src="./assets/images/coding-image-3.jpg" alt="Work Experience 3" height="200px" width="300px"> </a>
+                    <figcaption>Project 3</figcaption>
+                </figure>
+            </div>  
         </section>
-
+        
         <section  >
             <div class="info-sections" id="contact-info">
                 <h4>Contact Information</h4>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kylie-shinn-18b0301b7/">Kylie's LinkedIn Account</a></p>
+                <p><strong>LinkedIn:</strong> <a class="contact-link" href="https://www.linkedin.com/in/kylie-shinn-18b0301b7/" target="_blank">Kylie's LinkedIn Account</a></p>
                 <br>
-                <p><strong>GitHub:</strong> <a href="https://github.com/kyliemshinn">Kylie's Github Account</a></p>
+                <p><strong>GitHub:</strong> <a class="contact-link" href="https://github.com/kyliemshinn" target="_blank">Kylie's Github Account</a></p>
                 <br>
                 <br>
                 <p>To Get Ahold Of Me Directly Please Email Me At:</p>
                 <br>
                 <p>kyliemshinn@gmail.com</p>
                 <br>
-                <br>
-               <p style="text-align: center;">I Look Forward To Hearing From You!</p>
             </div>
         </section>
 
         <footer>
+            <hr>
             <h5>Kylie Shinn Web Portfolio 2022</h5>
         </footer>
     </main>
