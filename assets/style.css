@@ -38,7 +38,7 @@ p {
 header {
     position: fixed;
     top: 0;
-    width: 97%;
+    width: 100%;
     max-height:200px;
     border: 10px solid var(--dark-blue);
     border-radius: 1em;
@@ -124,8 +124,8 @@ img:hover {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    flex-basis: calc(50% - 1em);
     border: 2px solid var(--dark-blue);
+    border: 2px solid var(--light-blue);
     border-radius: 1em;
     margin: 10px;
     padding: 30px
@@ -134,55 +134,54 @@ img:hover {
 
 /* top image is bigger than the rest- will   not have */
 #project-1 {
-    /* border: 30px solid var(--light); */
-    height: 200px;
+    height: 300px;
     flex-basis: 100%;
     background-image: url(../assets/images/coding-image-1.jpg);
 }
 
 /* all project links have a corresponding picture to each section */
 #project-2 {
-    height: 100px;
-    width: fit-content;
-    /* flex-basis: calc(50% - 1em); */
+    height: 200px;
+    width: 350px;
     background-image: url(../assets/images/coding-image-2.jpg);
 }
 
 #project-3 {
-    height: 100px;
-    width: fit-content;
-    /* flex-basis: (50% - 1em); */
+    height: 200px;
+    width: 350px;
     background-image: url(../assets/images/coding-image-3.jpg);
 }
 
 #project-4 {
-    height: 100px;
-    width: fit-content;
-    /* flex-basis: (50% - 1em); */
+    height: 200px;
+    width: 350px;
     background-image: url(../assets/images/code-pic-4.jpg);
 }
 
 #project-5 {
-    height: 100px;
-    width: fit-content;
-    /* flex-basis: (50% - 1em); */
+    height: 200px;
+    width: 350px;
     background-image: url(../assets/images/code-pic-5.jpg);
 }
 
-div a {
+.projects {
     color: var(--light);
     text-decoration: none;
     border: var(--light-blue);
+    background-color: var(--dark-blue);
+    align-items: center;
+    font-size: 150%;
     width: 50px;
 }
 
 
 .contact-link {
     color: var(--light);
+    text-decoration: none;
+    font-size: medium;
 }
 
-
-
+/* sections should take up full screen still at larger screen sizes */
 @media screen and (min-width: 1280px) {
 
   
@@ -191,14 +190,15 @@ div a {
     }
 }
 
-@media screen and (max-width: 768px) {
+/* smaller screen sizes heading fonts need to be smaller to not break up text-keep same layout */
+@media screen and (min-width: 768px) {
 
     header h2 {
         font-size: 95%;
     }
 
     .header-info {
-        font-size: 80%;
+        font-size: 50%;
     }
 
 }
