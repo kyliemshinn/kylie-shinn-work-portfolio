@@ -125,13 +125,19 @@ img:hover {
     display: flex;
     flex-direction: row;
     /* flex-basis: (50%); */
-    border: solid var(--dark-blue);
+    border: 2px solid var(--dark-blue);
     margin: 10px;
     padding: 30px
 }
 
+span {
+    background-color: var(--dark-blue);
+    border: 1px;
+}
+
 
 #project-1 {
+    /* border: 30px solid var(--light); */
     height: 200px;
     flex-basis: 100%;
     background-image: url(../assets/images/coding-image-1.jpg);
@@ -223,12 +229,21 @@ footer {
 
 @media screen and (max-width:992px) {
  
-    /* header {
-        width: 95%;
+    /* header h2{
+        font-size: ;
     } */
 }
 
 @media screen and (max-width: 768px) {
+
+    header h2 {
+        font-size: 95%;
+    }
+
+    .header-info {
+        font-size: 80%;
+    }
+
     /* body {
         display: flex;
         flex-direction: column;
