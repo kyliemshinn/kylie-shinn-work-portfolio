@@ -12,7 +12,7 @@ The webpage has a clear, concise description with a recent picture floating side
 
 The orinal intent was for the image and and the bio to be separate sections and float side by side, but i ended up added the picture to About Me bio section for visual preferences. Everything else stayed consistent with the original visual plan.
 
-![Wireframe](/assets/images/small-screen-portfolio.PNG)
+![Wireframe](/assets/images/wireframe-first-portfolio.PNG)
 
 Below, there is recent work history displayed in images, that when you click on the image title, it will direct you to the Github page of the projects. The image displayed first should be displayed larger than the rest. The link will direct to my Github account to show all repositories done thus far.
 
